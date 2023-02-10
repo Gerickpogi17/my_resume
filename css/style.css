@@ -324,9 +324,9 @@ header .navbar ul li a:hover{
 .skill .row .content .title{
     /* text-transform: uppercase; */
     color:#fff;
-    font-size: 3rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .skill .row .content .info h3{
@@ -344,8 +344,30 @@ header .navbar ul li a:hover{
     text-transform: none;
 }
 
+.skill .row .content p{
+    font-size: 1.8rem;
+    color:#eee;
+    padding-top: 0.7rem;
+    font-weight: 300;
+}
 
+.skill .row ul li::marker {
+    color: #00caca;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
 
+.skill .row ul li {
+    font-size: 1.8rem;
+    color:#eee;
+    padding-top: 0.7rem;
+    font-weight: 300;
+  }
+  .skill .row ul {
+   padding-left: 2rem;
+  }
 
 .portfolio .box-container{
     display: flex;
@@ -441,23 +463,6 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* media queries  */
