@@ -396,6 +396,54 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
+.flex-column-reverse {
+    flex-direction: column !important;
+    display: flex;
+    text-align: center;
+    }   
+
+.portfolio .box-container p{
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    /* padding-top:2rem; */
+    font-weight: 700;
+}
+.portfolio .box-container p2{
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    /* padding-top:2rem; */
+    font-weight: 700;
+}
+
+.certification .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.certification .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.certification .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.certification .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
 .contact .row{
     display: flex;
     align-items: center;
@@ -529,8 +577,13 @@ header .navbar ul li a:hover{
         width:100%;
     }
 
+    .certification .box-container .box{
+        width:100%;
+    }
+
     .contact .row form{
         margin:3rem 0;
     }
+   
 
  }
