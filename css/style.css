@@ -324,9 +324,9 @@ header .navbar ul li a:hover{
 .skill .row .content .title{
     /* text-transform: uppercase; */
     color:#fff;
-    font-size: 3rem;
+    font-size: 4rem;
     padding-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 .skill .row .content .info h3{
@@ -344,10 +344,39 @@ header .navbar ul li a:hover{
     text-transform: none;
 }
 
+.skill .row .content p{
+    font-size: 1.8rem;
+    color:#eee;
+    padding-top: 0.7rem;
+    font-weight: 300;
+}
 
+.skill .row ul li::marker {
+    color: #00caca;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
 
+.skill .row ul li {
+    font-size: 1.8rem;
+    color:#eee;
+    padding-top: 0.7rem;
+    font-weight: 300;
+  }
+  .skill .row ul {
+   padding-left: 2rem;
+  }
 
 .portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+.portfolio .box-containers{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,6 +400,54 @@ header .navbar ul li a:hover{
 }
 
 .portfolio .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
+.flex-column-reverse {
+    flex-direction: column !important;
+    display: flex;
+    text-align: center;
+    }   
+
+.portfolio .box-container p{
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    /* padding-top:2rem; */
+    font-weight: 700;
+}
+.portfolio .box-container p2{
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    /* padding-top:2rem; */
+    font-weight: 700;
+}
+
+.certification .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:2rem 0;
+}
+
+.certification .box-container .box{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.certification .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.certification .box-container .box:hover img{
     transform: scale(1.2);
 }
 
@@ -443,23 +520,6 @@ header .navbar ul li a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries  */
 
 @media (max-width:1200px){
@@ -524,8 +584,13 @@ header .navbar ul li a:hover{
         width:100%;
     }
 
+    .certification .box-container .box{
+        width:100%;
+    }
+
     .contact .row form{
         margin:3rem 0;
     }
+   
 
  }
